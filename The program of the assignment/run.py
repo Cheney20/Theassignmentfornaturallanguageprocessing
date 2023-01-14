@@ -6,8 +6,8 @@ from train_eval import train, init_network
 from importlib import import_module
 import argparse
 
-parser = argparse.ArgumentParser(description='Chinese Text Classification')
-parser.add_argument('--model', default='Transformer',type=str, required=True, help='choose a model: TextCNN, TextRNN, FastText, TextRCNN, TextRNN_Att, DPCNN, Transformer')
+parser = argparse.ArgumentParser(description='The assignment of Text Classification that uses Transformer to finish')
+parser.add_argument('--model', default='Transformer',type=str, required=True)
 parser.add_argument('--embedding', default='pre_trained', type=str, help='random or pre_trained')
 parser.add_argument('--word', default=False, type=bool, help='True for word, False for char')
 args = parser.parse_args()
